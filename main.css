@@ -117,30 +117,30 @@ header ul {
     }
 }
 
-/* Portfolio */
-#portfolio {
+/* Posters */
+#posters {
     background: #000;
     padding: 4.5em 0 7.5em;
 }
-#portfolio img {
+#posters img {
     margin: 2em auto;
     border: #8000ff 1px solid;
     max-width: 35em;
     display: block;
 }
 @media(min-width:768px) {
-    #portfolio .container {
+    #posters .container {
         width: 90%;
     }
-    #portfolio img {
+    #posters img {
         max-width: initial;
     }
 }
 @media(min-width:992px) {
-    #portfolio {
+    #posters {
         padding: 8em 0;
     }
-    #portfolio .container {
+    #posters .container {
         width: 80%;
     }
 }
