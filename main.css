@@ -1,0 +1,291 @@
+body {
+    padding-top: 5.5em;
+    min-width: 330px;
+}
+
+/* Global */
+.container {
+    width: 80%;
+}
+img {
+    width: 100%;
+}
+hr {
+    border-color: #8060ff;
+}
+
+/* Header */
+.navbar {
+    min-width: 330px;
+    margin-bottom: 0;
+    border-radius: 0;
+    background: #000;
+    color: #fff;
+    padding: 1em .5em;
+    border-bottom: #8000ff 3px solid;
+}
+.highlight {
+    color: #ff8000;
+}
+header h1 {
+    color: #fff;
+    margin-top: -.25em;
+}
+header ul {
+    text-align: center;
+}
+.nav li {
+    display: inline-flex;
+    padding-top: 1em;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.navbar .nav li a {
+    background: #000;
+    color: #fff;
+}
+.navbar .nav li a:focus,
+.navbar .nav li a:hover {
+    color: #ff8000 !important;
+}
+.navbar .nav .active a {
+    background: #000;
+    color: #ff8000;
+}
+@media(min-width:768px) {
+    header h1 {
+        color: #f0f;
+        padding-left: .7em;
+    }
+    header ul {
+        padding-right: 3em;
+    }
+    .nav li {
+        padding: 0;
+    }
+}
+
+/* About */
+#about {
+    background-color: #ff8000;
+    color: #000;
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 3em 0;
+}
+#photo img {
+    padding: 3em 0 1em;
+    border-radius: 34% 17%;
+    max-width: 16em;
+    display: block;
+    margin: auto;
+}
+@media(min-width:768px) {
+    #about {
+        padding: 5em 0;
+    }
+    #bio {
+        float: left;
+        width: 55%;
+        padding-top: 2em;
+    }
+    #photo {
+        float: right;
+        width: 35%;
+    }
+    #photo img {
+        border-radius: 34% 17%;
+        width: 100%;
+        min-width: 16em;
+        margin: auto;
+        padding: 0;
+    }
+}
+@media(min-width:992px) {
+    #about {
+        padding: 7em 0;
+    }
+    #bio {
+        width: 60%;
+        padding-top: 3em;
+    }
+    #photo {
+        width: 30%;
+    }
+    #photo img {
+        min-width: 18em;
+    }
+}
+
+/* Portfolio */
+#portfolio {
+    background: #000;
+    padding: 4.5em 0 7.5em;
+}
+#portfolio img {
+    margin: 2em auto;
+    border: #8000ff 1px solid;
+    max-width: 35em;
+    display: block;
+}
+@media(min-width:768px) {
+    #portfolio .container {
+        width: 90%;
+    }
+    #portfolio img {
+        max-width: initial;
+    }
+}
+@media(min-width:992px) {
+    #portfolio {
+        padding: 8em 0;
+    }
+    #portfolio .container {
+        width: 80%;
+    }
+}
+
+/* Contact */
+#contact {
+    background: url('Images/Contact Background.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    font-weight: bold;
+    padding: 3em 0;
+}
+#contact h1 {
+    color: #ff8000;
+    letter-spacing: 7px;
+}
+#contact form {
+    margin: 5em auto;
+}
+#contact input {
+    width: 100%;
+    max-width: 32em;
+    height: 3.5em;
+    padding: 1em;
+    background: transparent;
+    color: #f2f2f2;
+    outline: none;
+    border: #8000ff 1px solid;
+    margin-bottom: -1px;
+}
+#contact textarea {
+    width: 100%;
+    max-width: 32em;
+    height: 10em;
+    padding: 1em;
+    background: transparent;
+    color: #f2f2f2;
+    outline: none;
+    border: #8000ff 1px solid;
+}
+#contact button {
+    width: 100%;
+    max-width: 32em;
+    height: 3.5em;
+    margin-top: -6px;
+    background: transparent;
+    color: #ff8000;
+    outline: none;
+    border: #8000ff 1px solid;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #ff8000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+#contact input:hover,
+#contact textarea:hover,
+#contact button:hover,
+#contact input:focus,
+#contact textarea:focus,
+#contact button:focus {
+    background: #000;
+    transition: .5s;
+}
+#contact button:hover {
+    letter-spacing: 2em;
+    text-indent: 2em;
+}
+@media(min-width:768px) {
+    #contact input {
+        width: 80%;
+        max-width: 37em;
+    }
+    #contact textarea {
+        width: 80%;
+        max-width: 37em;
+    }
+    #contact button {
+        width: 80%;
+        max-width: 37em;
+    }
+    #contact h1,
+    #contact input::placeholder,
+    #contact textarea::placeholder,
+    #contact button {
+        color: #f0f;
+    }
+}
+@media(min-width:992px) {
+    #contact input {
+        width: 69%;
+        max-width: 50em;
+    }
+    #contact textarea {
+        width: 69%;
+        max-width: 50em;
+    }
+    #contact button {
+        width: 69%;
+        max-width: 50em;
+    }
+}
+
+/* Social Media */
+#social-media {
+    position: fixed;
+    top: 11em;
+    left: -1.3em;
+}
+#social-media a {
+    display: block;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.4em 1.2em 0.4em 0.4em;
+    margin-left: -0.2em;
+    width: 1.5em;
+}
+.fa-facebook,
+.fa-phone {
+    background: #8000ff;
+}
+.fa-instagram {
+    background: #f0f;
+}
+.fa-linkedin {
+    background: #ff8000;
+}
+#social-media a:hover {
+    font-size: 3em;
+    transition: .3s;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 1.5em;
+    text-align: center;
+    color: #f2f2f2;
+    border-top: #8000ff 3px solid;
+}
