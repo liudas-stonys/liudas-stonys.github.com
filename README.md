@@ -1,3 +1,2 @@
-## KiberDizainas Portfolio page
-### Demo mode. Not finished
-My first portfolio page.
+## Liudas Stonys portfolio page
+### Under construction for the rest of my life :)
