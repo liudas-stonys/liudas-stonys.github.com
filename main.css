@@ -6,7 +6,7 @@ body {
     font-weight: 400;
     padding-top: 55px;
     font-size: 100%;
-    letter-spacing: .25px;
+    letter-spacing: 1px;
 }
 
 /* Global */
@@ -203,51 +203,67 @@ header ul {
 /* Websites */
 #websites {
     background-color: #000;
-    color: #fff;
-    /*padding: 4.5em 0 7.5em;*/
-    text-align: justify;
+    padding: 25px 0px;
+    text-align: center;
     font-size: 120%;
-    /*padding: 3em 0;*/
 }
 #websites h1 {
     color: #8000ff;
-    text-align: center;
     letter-spacing: 3px;
 }
 #websites img {
-    padding: 3em 0 1em;
-    /*max-width: 16em;*/
+    padding: 30px 0 10px;
     display: block;
     margin: auto;
+}
+#websites a,
+#websites a:hover,
+#websites a:active,
+#websites a:visited,
+#websites a:focus {
+    color: #a050ff;
+    font-size: 150%;
+}
+@media only screen and (min-width: 992px) {
+    #websites {
+        padding: 40px 0px;
+    }
+    .website {
+        padding: 20px 0px;
+    }
 }
 
 /* Posters */
 #posters {
-    background-color: #000;
-    padding: 4.5em 0 7.5em;
+    background-color: #435918;
+    padding: 30px 0px;
+    text-align: center;
+}
+#posters h1 {
+    color: #ff8000;
+    letter-spacing: 3px;
+    font-size: 420%;
+}
+#posters .row {
+    padding: 20px 0px;
 }
 #posters img {
-    margin: 2em auto;
-    border: #8000ff 1px solid;
-    max-width: 35em;
     display: block;
+    margin: 30px auto;
 }
 @media (min-width: 768px) {
     #posters .container {
-        width: 90%;
+        width: 80%;
     }
     #posters img {
         max-width: initial;
     }
 }
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
     #posters {
-        padding: 8em 0;
+        padding: 80px 0px;
     }
-    #posters .container {
-        width: 80%;
-    }
-}
+}*/
 
 /* Contact */
 #contact {
