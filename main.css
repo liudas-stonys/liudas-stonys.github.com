@@ -17,6 +17,8 @@ img {
 }
 hr {
     border-color: #8060ff;
+    width: 95%;
+    float: left;
 }
 a,
 a:hover,
@@ -26,44 +28,45 @@ a:focus {
     text-decoration: none;
     color: darkblue;
 }
-/*@media (max-width: 511px) {
-    .container {
-        width: 100%;
-    }
-}*/
 
 /* Header */
 .navbar {
     /*min-width: 640px;*/
     /*margin-bottom: 0;*/
     /*border-radius: 0;*/
+    letter-spacing: .25px;
     background-color: #000;
     color: #fff;
-    letter-spacing: .25px;
-    padding: 10px 20px;
     border-bottom: #8000ff 3px solid;
 }
-/*.navbar-nav {
-    margin: 0;
-}*/
 header h1 {
+	font-size: 175%;
+	margin-top: -10px;
+	padding-top: 2.5px;
     color: #f0f;
-    margin-top: -10px;
 }
 header h1 .highlight {
     color: #ff8000;
 }
 header ul {
+	/*padding-top: -20px;*/
     text-align: center;
 }
+.navbar {
+	margin: 0px -5px;
+}
 .navbar .nav li {
+	/*padding: 0px;*/
+    font-size: 115%;
     display: inline-flex;
     /*padding-top: 10px;*/
-    overflow: hidden;
     text-transform: uppercase;
-    font-size: 150%;
+    overflow: hidden;
 }
 .navbar .nav li a {
+	padding: 2.5px;
+	/*padding: 0px 10px 20px 10px;*/
+	/*padding-bottom: 5px;*/
     background-color: #000;
     color: #fff;
 }
@@ -75,53 +78,54 @@ header ul {
     background-color: #000;
     color: #ff8000;
 }
-.navbar-right {
-    padding-top: 7.5px;
-    margin-bottom: -7.5px;
-}
-@media (max-width: 992px) {
-    .nav li a {
-        padding: 15px 10px;
-    }
-}
-@media (max-width: 892px) {
+@media only screen and (min-width: 411px) {
+    .navbar {
+		margin: 0px -2.5px;
+	}
     .navbar .nav li {
         font-size: 125%;
     }
-    .nav li a {
-        padding: 15px 5px;
+    .navbar .nav li a {
+    	padding: 5px;
     }
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 568px) {
     .navbar {
-        letter-spacing: 0px;
-    }
-    .navbar .nav li {
-        font-size: 150%;
-    }
-    .nav li a {
-        padding: 15px;
-    }
-    .navbar-right {
+        padding: 0px 10px;
         margin: 0px;
     }
-}
-@media (max-width: 692px) {
-    .nav li a {
-        padding: 15px 10px;
+    .navbar .nav li {
+        font-size: 160%;
+    }
+    .navbar .nav li a {
+        padding: 5px 10px;
     }
 }
-@media (max-width: 592px) {
+@media only screen and (min-width: 768px) {
     .navbar {
-        padding: 10px 0px;
+        padding: 10px;
+    }
+    .navbar-nav {
+    	padding-top: 17px;
     }
     .navbar .nav li {
-        font-size: 125%;
+        font-size: 135%;
     }
 }
-@media (max-width: 492px) {
-    .nav li a {
-        padding: 15px 3.5px;
+@media only screen and (min-width: 992px) {
+	.navbar {
+        padding: 10px 30px;
+    }
+    .navbar .nav li {
+        font-size: 170%;
+    }
+}
+@media only screen and (min-width: 1300px) {
+	.navbar {
+		padding: 10px 42px;
+	}
+	.navbar .nav li {
+        font-size: 200%;
     }
 }
 
@@ -131,50 +135,65 @@ header ul {
     color: #000;
     font-size: 150%;
     letter-spacing: .25px;
-    /*text-align: justify;*/
-    /*padding: 30px 0px;*/
+    min-height: 600px;
+    margin-top: -5px;
+    padding: 20px 0px 30px;
+    
 }
-#photo img {
-    /*padding: 3em 0 1em;*/
+#about img {
     border-radius: 34% 17%;
-    max-width: 300px;
+    width: 90%;
+    max-width: 350px;
     display: block;
     margin: auto;
+    padding-top: 20px;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     #about {
-        padding: 5em 0;
+        padding: 0px;
     }
-    #bio {
+    #about .left-box {
         float: left;
-        width: 55%;
-        padding-top: 2em;
+        width: 70%;
+        margin-left: -5%;
+        padding-right: 5%;
+        line-height: 600px;
+
+        /*border: 1px solid red;*/
     }
-    #photo {
-        float: right;
-        width: 35%;
+    #about article {
+    	line-height: 22px;
+	    display: inline-block;
+	    vertical-align: middle;
     }
-    #photo img {
+    #about .right-box {
+    	float: right;
+        width: 50%;
+        margin: 0% -10%;
+        line-height: 600px;
+    	text-align: center;
+
+    	/*border: 1px solid red;*/
+    }
+    #about aside {
+    	line-height: 22px;
+	    display: inline-block;
+	    vertical-align: middle;
+    }
+    #about img {
+    	padding-top: 0px;
         border-radius: 34% 17%;
-        width: 100%;
-        min-width: 16em;
-        margin: auto;
-        padding: 0;
     }
 }
-@media (min-width: 992px) {
-    #about {
-        padding: 7em 0;
-    }
-    #bio {
+@media only screen and (min-width: 1300px) {
+	#about .left-box {
         width: 60%;
-        padding-top: 3em;
+        margin-left: 0%;
+        padding-right: 0%;
     }
-    #photo {
-        width: 30%;
-    }
-    #photo img {
-        min-width: 18em;
+    #about .right-box {
+        width: 40%;
+        margin: 0% -5%;
     }
 }
 
