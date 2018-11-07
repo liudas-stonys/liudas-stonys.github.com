@@ -1,6 +1,11 @@
 body {
-    padding-top: 5.5em;
-    min-width: 330px;
+    width: 100%;
+    min-width: 320px;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    padding-top: 55px;
+    font-size: 100%;
 }
 
 /* Global */
@@ -13,35 +18,53 @@ img {
 hr {
     border-color: #8060ff;
 }
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: darkblue;
+}
+/*@media (max-width: 511px) {
+    .container {
+        width: 100%;
+    }
+}*/
 
 /* Header */
 .navbar {
-    min-width: 330px;
-    margin-bottom: 0;
-    border-radius: 0;
-    background: #000;
+    /*min-width: 640px;*/
+    /*margin-bottom: 0;*/
+    /*border-radius: 0;*/
+    background-color: #000;
     color: #fff;
-    padding: 1em .5em;
+    letter-spacing: .25px;
+    padding: 10px 20px;
     border-bottom: #8000ff 3px solid;
 }
-.highlight {
-    color: #ff8000;
-}
+/*.navbar-nav {
+    margin: 0;
+}*/
 header h1 {
-    color: #fff;
-    margin-top: -.25em;
+    color: #f0f;
+    margin-top: -10px;
+}
+header h1 .highlight {
+    color: #ff8000;
 }
 header ul {
     text-align: center;
 }
-.nav li {
+.navbar .nav li {
     display: inline-flex;
-    padding-top: 1em;
+    /*padding-top: 10px;*/
     overflow: hidden;
     text-transform: uppercase;
+    font-size: 150%;
 }
 .navbar .nav li a {
-    background: #000;
+    background-color: #000;
     color: #fff;
 }
 .navbar .nav li a:focus,
@@ -49,19 +72,56 @@ header ul {
     color: #ff8000 !important;
 }
 .navbar .nav .active a {
-    background: #000;
+    background-color: #000;
     color: #ff8000;
 }
-@media(min-width:768px) {
-    header h1 {
-        color: #f0f;
-        padding-left: .7em;
+.navbar-right {
+    padding-top: 7.5px;
+    margin-bottom: -7.5px;
+}
+@media (max-width: 992px) {
+    .nav li a {
+        padding: 15px 10px;
     }
-    header ul {
-        padding-right: 3em;
+}
+@media (max-width: 892px) {
+    .navbar .nav li {
+        font-size: 125%;
     }
-    .nav li {
-        padding: 0;
+    .nav li a {
+        padding: 15px 5px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar {
+        letter-spacing: 0px;
+    }
+    .navbar .nav li {
+        font-size: 150%;
+    }
+    .nav li a {
+        padding: 15px;
+    }
+    .navbar-right {
+        margin: 0px;
+    }
+}
+@media (max-width: 692px) {
+    .nav li a {
+        padding: 15px 10px;
+    }
+}
+@media (max-width: 592px) {
+    .navbar {
+        padding: 10px 0px;
+    }
+    .navbar .nav li {
+        font-size: 125%;
+    }
+}
+@media (max-width: 492px) {
+    .nav li a {
+        padding: 15px 3.5px;
     }
 }
 
@@ -69,18 +129,19 @@ header ul {
 #about {
     background-color: #ff8000;
     color: #000;
-    text-align: justify;
-    font-size: 1.2em;
-    padding: 3em 0;
+    font-size: 150%;
+    letter-spacing: .25px;
+    /*text-align: justify;*/
+    /*padding: 30px 0px;*/
 }
 #photo img {
-    padding: 3em 0 1em;
+    /*padding: 3em 0 1em;*/
     border-radius: 34% 17%;
-    max-width: 16em;
+    max-width: 300px;
     display: block;
     margin: auto;
 }
-@media(min-width:768px) {
+@media (min-width: 768px) {
     #about {
         padding: 5em 0;
     }
@@ -101,7 +162,7 @@ header ul {
         padding: 0;
     }
 }
-@media(min-width:992px) {
+@media (min-width: 992px) {
     #about {
         padding: 7em 0;
     }
@@ -117,9 +178,30 @@ header ul {
     }
 }
 
+/* Websites */
+#websites {
+    background-color: #000;
+    color: #fff;
+    padding: 4.5em 0 7.5em;
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 3em 0;
+}
+#websites h1 {
+    color: #8000ff;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#websites img {
+    padding: 3em 0 1em;
+    /*max-width: 16em;*/
+    display: block;
+    margin: auto;
+}
+
 /* Posters */
 #posters {
-    background: #000;
+    background-color: #000;
     padding: 4.5em 0 7.5em;
 }
 #posters img {
@@ -128,7 +210,7 @@ header ul {
     max-width: 35em;
     display: block;
 }
-@media(min-width:768px) {
+@media (min-width: 768px) {
     #posters .container {
         width: 90%;
     }
@@ -136,7 +218,7 @@ header ul {
         max-width: initial;
     }
 }
-@media(min-width:992px) {
+@media (min-width: 992px) {
     #posters {
         padding: 8em 0;
     }
@@ -147,7 +229,7 @@ header ul {
 
 /* Contact */
 #contact {
-    background: url('Images/Contact background.jpg');
+    background-image: url('Images/Contact background.jpg');
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -156,7 +238,7 @@ header ul {
 }
 #contact h1 {
     color: #ff8000;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
 }
 #contact form {
     margin: 5em auto;
@@ -166,7 +248,7 @@ header ul {
     max-width: 32em;
     height: 3.5em;
     padding: 1em;
-    background: transparent;
+    background-color: transparent;
     color: #f2f2f2;
     outline: none;
     border: #8000ff 1px solid;
@@ -177,7 +259,7 @@ header ul {
     max-width: 32em;
     height: 10em;
     padding: 1em;
-    background: transparent;
+    background-color: transparent;
     color: #f2f2f2;
     outline: none;
     border: #8000ff 1px solid;
@@ -187,7 +269,7 @@ header ul {
     max-width: 32em;
     height: 3.5em;
     margin-top: -6px;
-    background: transparent;
+    background-color: transparent;
     color: #ff8000;
     outline: none;
     border: #8000ff 1px solid;
@@ -209,14 +291,14 @@ header ul {
 #contact input:focus,
 #contact textarea:focus,
 #contact button:focus {
-    background: #000;
+    background-color: #000;
     transition: .5s;
 }
 #contact button:hover {
     letter-spacing: 2em;
     text-indent: 2em;
 }
-@media(min-width:768px) {
+@media (min-width: 768px) {
     #contact input {
         width: 80%;
         max-width: 37em;
@@ -236,7 +318,7 @@ header ul {
         color: #f0f;
     }
 }
-@media(min-width:992px) {
+@media (min-width: 992px) {
     #contact input {
         width: 69%;
         max-width: 50em;
@@ -268,13 +350,13 @@ header ul {
 }
 .fa-facebook,
 .fa-phone {
-    background: #8000ff;
+    background-color: #8000ff;
 }
 .fa-instagram {
-    background: #f0f;
+    background-color: #f0f;
 }
 .fa-linkedin {
-    background: #ff8000;
+    background-color: #ff8000;
 }
 #social-media a:hover {
     font-size: 3em;
@@ -283,7 +365,7 @@ header ul {
 
 /* Footer */
 footer {
-    background: #000;
+    background-color: #000;
     padding: 1.5em;
     text-align: center;
     color: #f2f2f2;
