@@ -23,6 +23,7 @@ h1 {
 }
 img {
     width: 100%;
+    text-shadow: none;
 }
 hr {
     border-color: #8060ff;
