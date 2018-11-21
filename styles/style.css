@@ -1,10 +1,10 @@
-/*html {
+html {
     font-size: 10px;
-}*/
+}
 body {
     font-family: "Orbitron", sans-serif;
     font-size: 1em;
-    text-shadow: 3px 3px 1px red;
+    text-shadow: .3em .3em .1em red;
 
     width: 100%;
     min-width: 320px;
@@ -38,12 +38,6 @@ a:focus {
     text-decoration: none;
     color: darkblue;
 }
-@media only screen and (min-width: 768px) {
-    hr {
-        width: 95%;
-        /*float: left;*/
-    }
-}
 
 /* Header */
 .navbar {
@@ -56,7 +50,7 @@ a:focus {
     border-bottom: #8000ff 3px solid;
 }
 header h1 {
-	font-size: 175%;
+	font-size: 1.75em;
 	margin-top: -10px;
 	padding-top: 2.5px;
     color: #f0f;
@@ -94,56 +88,6 @@ header ul {
     background-color: #000;
     color: #ff8000;
 }
-@media only screen and (min-width: 411px) {
-    .navbar {
-		margin: 0px -2.5px;
-	}
-    .navbar .nav li {
-        font-size: 125%;
-    }
-    .navbar .nav li a {
-    	padding: 5px;
-    }
-}
-@media only screen and (min-width: 568px) {
-    .navbar {
-        padding: 0px 10px;
-        margin: 0px;
-    }
-    .navbar .nav li {
-        font-size: 160%;
-    }
-    .navbar .nav li a {
-        padding: 5px 10px;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .navbar {
-        padding: 10px;
-    }
-    .navbar-nav {
-    	padding-top: 17px;
-    }
-    .navbar .nav li {
-        font-size: 135%;
-    }
-}
-@media only screen and (min-width: 992px) {
-	.navbar {
-        padding: 10px 30px;
-    }
-    .navbar .nav li {
-        font-size: 170%;
-    }
-}
-@media only screen and (min-width: 1300px) {
-	.navbar {
-		padding: 10px 42px;
-	}
-	.navbar .nav li {
-        font-size: 200%;
-    }
-}
 
 /* About */
 #about {
@@ -163,58 +107,6 @@ header ul {
     display: block;
     margin: auto;
     padding-top: 20px;
-}
-@media only screen and (min-width: 768px) {
-    #about {
-        padding: 0px;
-        min-height: 620px;
-    }
-    #about .left-box {
-        float: left;
-        width: 70%;
-        margin-left: -5%;
-        padding-right: 5%;
-        line-height: 605px;
-
-        /*border: 1px solid red;*/
-    }
-    #about article {
-    	line-height: 22px;
-	    display: inline-block;
-	    vertical-align: middle;
-    }
-    #about .right-box {
-    	float: right;
-        width: 50%;
-        margin: 0% -10%;
-        line-height: 600px;
-    	text-align: center;
-
-    	/*border: 1px solid red;*/
-    }
-    #about aside {
-    	line-height: 22px;
-	    display: inline-block;
-	    vertical-align: middle;
-    }
-    #about img {
-    	padding-top: 0px;
-        border-radius: 34% 17%;
-    }
-}
-@media only screen and (min-width: 1300px) {
-	#about .left-box {
-        width: 60%;
-        margin-left: 0%;
-        padding-right: 0%;
-        font-size: 110%;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-    }
-    #about .right-box {
-        width: 40%;
-        margin: 0% -5%;
-    }
 }
 
 /* Websites */
@@ -243,14 +135,6 @@ header ul {
     text-shadow: none;
     font-size: 150%;
 }
-@media only screen and (min-width: 992px) {
-    #websites {
-        padding: 40px 0px;
-    }
-    .website {
-        padding: 20px 0px;
-    }
-}
 
 /* Posters */
 #posters {
@@ -270,21 +154,8 @@ header ul {
     display: block;
     margin: 30px auto;
 }
-@media (min-width: 768px) {
-    #posters .container {
-        width: 80%;
-    }
-    #posters img {
-        max-width: initial;
-    }
-}
-/*@media (min-width: 992px) {
-    #posters {
-        padding: 80px 0px;
-    }
-}*/
 
-/* Contact */
+/* Contact me */
 #contact {
     background-image: url("../images/contact-background.jpg");
     background-size: cover;
@@ -342,28 +213,6 @@ header ul {
 #contact button:hover {
     letter-spacing: 20px;
     text-indent: 20px;
-}
-@media (min-width: 768px) {
-    #contact input,
-    #contact textarea,
-    #contact button {
-        width: 80%;
-        max-width: 370px;
-    }
-    #contact h1,
-    #contact input::placeholder,
-    #contact textarea::placeholder,
-    #contact button {
-        color: #f0f;
-    }
-}
-@media (min-width: 992px) {
-    #contact input,
-    #contact textarea,
-    #contact button {
-        width: 69%;
-        max-width: 500px;
-    }
 }
 
 /* Social Media */
