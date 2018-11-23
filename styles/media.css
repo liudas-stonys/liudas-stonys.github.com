@@ -5,6 +5,11 @@
         /*float: left;*/
     }
 }
+@media only screen and (min-width: 992px) {
+    section {
+        min-height: 620px;
+    }
+}
 
 /* Header */
 @media only screen and (min-width: 411px) {
@@ -62,7 +67,7 @@
 @media only screen and (min-width: 768px) {
     #about {
         padding: 0px;
-        min-height: 620px;
+        /* min-height: 620px; */
     }
     #about .left-box {
         float: left;
@@ -153,6 +158,9 @@
     }
 }
 @media (min-width: 992px) {
+    #contact {
+        min-height: initial;
+    }
     #contact input,
     #contact textarea,
     #contact button {
