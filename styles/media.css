@@ -156,6 +156,8 @@
         max-width: 370px;
     }
     #contact h1,
+    #contact h2,
+    #contact h3,
     #contact input::placeholder,
     #contact textarea::placeholder,
     #contact button {

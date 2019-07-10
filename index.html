@@ -98,22 +98,29 @@
     
     <section id="contact">
         <div class="container">
-            <h1>C0nt4ct Me</h1>
-            <form id="contactForm" class="contact-me" action="javascript:" onsubmit="sendEmail()">
-                <div>
-                    <input id="name" type="text" placeholder="Name">
-                </div>
-                <div>
-                    <input id="email" type="text" placeholder="E-mail">
-                </div>
-                <div>
-                    <input id="phone" type="text" placeholder="Phone">
-                </div>
-                <div>
-                    <textarea id="message" type="text" placeholder="Message"></textarea>
-                </div>
-                <button id="submit" type="submit">Send</button>
-            </form>
+            <div id="contactMe">
+                <h1>C0nt4ct Me</h1>
+                <form id="contactForm" class="contact-form" action="javascript:" onsubmit="sendEmail()">
+                    <div>
+                        <input id="name" type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <input id="email" type="text" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <input id="phone" type="text" placeholder="Phone">
+                    </div>
+                    <div>
+                        <textarea id="message" type="text" placeholder="Message"></textarea>
+                    </div>
+                    <button id="submit" type="submit">Send</button>
+                </form>
+            </div>
+
+            <div id="contacted" class="hidden">
+                <h1>Jūsų žinutė sėkmingai išsiųsta!</h1>
+                <h3>Artimiausiu metu su Jumis susisieksime.</h3>
+            </div>
         </div>
     </section>
 

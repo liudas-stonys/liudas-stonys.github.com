@@ -1,5 +1,19 @@
-$(document).ready(function() {
-    if ($(window).width() < 768) {
+// (function() {
+// 	if (window.innerWidth < 760) {
+// 		var offset = 50;
+// 	} else {
+// 		var offset = 69;
+// 	}
+	
+// 	document.getElementsByClassName("anchor").addEventListener("click", 
+// 		$("html").animate({
+// 	        scrollTop: $(this.hash).offset().top - offset
+// 		}, 300)
+// 	)
+//  })();
+ 
+ $(document).ready(function() {
+    if ($(window).width() < 760) {
         var offset = 50;
     }
     else {
@@ -7,10 +21,9 @@ $(document).ready(function() {
     }
 
     $('.anchor').on('click', function() {
-	    $('html, body').animate( {
+	    $('html').animate({
 	        scrollTop: $(this.hash).offset().top - offset
-	    }, 300, function() {
-	    });
+	    }, 300);
 	});
 
 	$('#submit').on('click', function(e) {
@@ -25,17 +38,21 @@ $(document).ready(function() {
 
 sendEmail = () => {
 	Email.send({
-		Host : "smtp.elasticemail.com",
-		Username : "liudas.stonys@gmail.com",
-		Password : "504270ff-8cc6-42ed-953f-b155a81ecd7d",
-		To : "liudas.stonys@gmail.com",
-		From : "liudas.stonys@gmail.com",
-		Subject : "liudas-stonys.github.io | " + document.getElementById("name").value + " | " + document.getElementById("email").value + " | " + document.getElementById("phone").value,
-		Body : document.getElementById("message").value
+		Host: "smtp.elasticemail.com",
+		Username: "liudas.stonys@gmail.com",
+		Password: "504270ff-8cc6-42ed-953f-b155a81ecd7d",
+		To: "liudas.stonys@gmail.com",
+		From: "liudas.stonys@gmail.com",
+		Subject: "liudas-stonys.github.io | " + document.getElementById("name").value + " | " + document.getElementById("email").value + " | " + document.getElementById("phone").value,
+		Body: document.getElementById("message").value
 	}).then(
-		message => alert(message)
-	);
-}
+		message => {
+			if (message == "OK") {
+				document.getElementById("contactMe").classList.add("hidden");
+				document.getElementById("contacted").classList.remove("hidden");
+			}
+		});
+	}
 
 
 // Google API key

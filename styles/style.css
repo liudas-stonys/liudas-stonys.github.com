@@ -43,6 +43,9 @@ section {
     justify-content: center;
     align-items: center;
 }
+#hidden {
+    display: none;
+}
 
 /* Header */
 .navbar {
