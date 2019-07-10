@@ -55,11 +55,10 @@ sendEmail = () => {
 	}
 
 
-// Google API key
-// key=AIzaSyBH5Z3b_LOFktStwGRaUruZZDD_tFzv2Yc
 
-// Client ID
-// 318020525394-qmdcbpn2g6m0tqo6sb118m5kf02hvi31.apps.googleusercontent.com
 
-// Client secret
-// ipU8D8nA-wkuwZKk1EfgChNk
+
+
+
+
+
