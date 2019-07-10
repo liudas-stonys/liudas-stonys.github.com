@@ -41,14 +41,15 @@
             <div class="left-box">
                 <article>
                     <p>
-                        Hi and welcome to my page. My name is <a href="http://facebook.com/liudas.stonys" target="_blank">Liudas Stonys</a>. I'm a junior programmer and my job is to make regular people jobless. :)
+                        Hi and welcome to my page. My name is <a href="http://facebook.com/liudas.stonys" target="_blank">Liudas Stonys</a>. I"m a junior programmer and my job is to make regular people jobless. :)
                     </p>
                     <hr>
                     <p>
+                        I work as Front-end and React Native teacher in Code Academy Kids evening school.<br>
                         I finished Java courses in Vilnius Coding School.<br>
                         I studied audiovisual arts at Lithuanian Academy of Music and Theatre.<br>
                         Now I live in Vilnius and manage <a href="https://www.facebook.com/KompiuteriuGreitojiPagalba/" target="_blank">Kompiuteriu greitoji pagalba</a>.<br>
-                        I'm also a freelancer Lighting designer/programmer.<br>
+                        I"m also a freelancer Lighting designer/programmer.<br>
                     </p>
                 </article>
             </div>
@@ -98,7 +99,7 @@
     <section id="contact">
         <div class="container">
             <h1>C0nt4ct Me</h1>
-            <form class="contact-me">
+            <form id="contactForm" class="contact-me" action="javascript:" onsubmit="sendEmail()">
                 <div>
                     <input id="name" type="text" placeholder="Name">
                 </div>
@@ -129,8 +130,12 @@
         Created by Liudas Stonys &copy; 2018
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="scripts/script.js"></script>
+    <!-- DIV: Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/smtp.js"></script>
+    <script src="scripts/script.js"></script>
+
 </body>
+
 </html>

@@ -7,7 +7,12 @@
 }
 @media only screen and (min-width: 992px) {
     section {
-        min-height: 620px;
+        min-height: 650px;
+    }
+}
+@media only screen and (min-width: 1333px) {
+	section {
+        min-height: 980px;
     }
 }
 
@@ -159,7 +164,7 @@
 }
 @media (min-width: 992px) {
     #contact {
-        min-height: initial;
+        /* min-height: initial; */
     }
     #contact input,
     #contact textarea,
