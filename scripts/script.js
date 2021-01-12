@@ -38,7 +38,7 @@
 
 sendEmail = () => {
 	Email.send({
-		Host: "smtp.elasticemail.com",
+		Host: "smtp.elasticemail.com:2525",
 		Username: "liudas.stonys@gmail.com",
 		Password: "504270ff-8cc6-42ed-953f-b155a81ecd7d",
 		To: "liudas.stonys@gmail.com",
