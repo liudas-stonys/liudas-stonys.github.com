@@ -44,7 +44,7 @@ sendEmail = () => {
 		Server: "smtp.elasticemail.com",
 		Port: "2525",
 		To: "liudas.stonys@gmail.com",
-		From: "liudas.stonys@smtp.elasticemail.com",
+		From: "liudas.stonys@gmail.com",
 		Subject: "liudas-stonys.github.io | " + document.getElementById("name").value + " | " + document.getElementById("email").value + " | " + document.getElementById("phone").value,
 		Body: document.getElementById("message").value
 	}).then(
