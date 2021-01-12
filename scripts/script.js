@@ -41,10 +41,9 @@ sendEmail = () => {
 		Username: "liudas.stonys@gmail.com",
 		Password: "4205144A8985CA4F5F36AD9C5F615A7B7E59",
 		Host: "smtp.elasticemail.com",
-		Server: "smtp.elasticemail.com",
 		Port: "2525",
 		To: "liudas.stonys@gmail.com",
-		From: "liudas.stonys@smtp.elasticemail.com",
+		From: "liudas.stonys@gmail.com",
 		Subject: "liudas-stonys.github.io | " + document.getElementById("name").value + " | " + document.getElementById("email").value + " | " + document.getElementById("phone").value,
 		Body: document.getElementById("message").value
 	}).then(
